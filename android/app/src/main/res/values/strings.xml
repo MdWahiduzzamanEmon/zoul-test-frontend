@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Zoul</string>
+    <string name="facebook_app_id">3775579192708946</string>
+    <string name="fb_login_protocol_scheme">fb3775579192708946</string>
+    <string name="facebook_client_token">31207dd4b91f0fea0f2447dc16b5e3cc</string>
+</resources>

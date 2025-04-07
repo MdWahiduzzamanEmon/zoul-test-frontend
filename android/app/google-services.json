@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "434083334686",
+    "project_id": "zoul-meditation-sleep",
+    "storage_bucket": "zoul-meditation-sleep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434083334686:android:42c0c5e5787f6f8b5bfc0f",
+        "android_client_info": {
+          "package_name": "com.zoul.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434083334686-0c5u1k7s1mgpm9sj0km7rgmhd9l78l74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoul.app",
+            "certificate_hash": "cafdde88e48514bd88f542c7f3bce73e0f5f2b82"
+          }
+        },
+        {
+          "client_id": "434083334686-8ffj00cli45upmcbno1e99tkmtpmgc1f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoul.app",
+            "certificate_hash": "d53ed2c6e0d8ba098f2f45b0de7e0a0ce99ff7cf"
+          }
+        },
+        {
+          "client_id": "434083334686-eiojletnhk6g72u9jdndpu6gm11u6nrh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoul.app",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "434083334686-g7r40bh7nhrifaqkgnf9hjk91ql0lrmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtlrPc0wGAW66vOv2rEkWGP40l2sGTenQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118424933069739159292",
+              "client_type": 3
+            },
+            {
+              "client_id": "434083334686-dt5dpg14o00rup564guua1lrorrnan44.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zoul.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

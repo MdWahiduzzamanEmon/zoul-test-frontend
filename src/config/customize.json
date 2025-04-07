@@ -1,0 +1,15 @@
+{
+  "BASE_URL": "https://api.zoul.app/",
+  // "BASE_URL": "https://dev-api.zoul.app/",
+  "GOOGLE_SIGN_IN_WEB_CLIENT_ID": "434083334686-g7r40bh7nhrifaqkgnf9hjk91ql0lrmf.apps.googleusercontent.com",
+  "TERMS_AND_CONDITIONS_URL": "https://www.zoulmeditation.com/terms-of-service",
+  "PRIVACY_POLICY_URL": "https://www.zoulmeditation.com/privacy",
+  "BUCKET_NAME": "zoul-prod-assets",
+  "AFFILIATE_PROGRAM_URL": "https://zoul.firstpromoter.com/",
+  "CUSTOMER_SUPPORT_WHATSAPP_NUMBER": "+447301426350",
+  "CONTACT_SUPPORT_PAGE": "https://www.zoulmeditation.com/contact",
+  "CHECKOUT": "https://checkout.zoul.app/sign-in",
+  "MAPS_KEY":"AIzaSyAprzMq5C9ksuX1p4rp1NFP4WiOSrryEt0",
+  "PIXEL_CODE":"CU8GQR3C77U203LKVQ2G",
+  "PIXEL_ACCESS_TOKEN":"b7f733e8826dfc99eeb963078482b1abe0652b73"
+}

@@ -1,0 +1,6 @@
+export const aboutData = [
+  "Created by a team of meditation experts and business leaders, Zoul is rooted in nearly thirty years of guiding people toward mindfulness and mental wellbeing. Our mission is to make authentic meditation accessible on a global scale, providing a meaningful alternative to traditional apps with a focus on real impact.",
+  "Grounded in ancient meditation techniques and supported by modern brain science, Zoul encourages users to observe their thoughts, letting wisdom and insight emerge naturally instead of trying to silence the mind. Our approach goes beyond typical “clear your mind” techniques, offering depth and a sense of purpose in every session.",
+  "Zoul’s meditations are designed like on-demand seminars – accessible 24/7 for continuous support and tailored to be more affordable than expensive in-person programs. With features like personalized horoscopes, goal-based playlists, and offline playback in 17 languages, Zoul empowers users to find peace wherever they are. Our non-stop auto-play is perfect for sleep, and calming video content paired with audio provides a fully immersive experience for users.",
+  "At Zoul, we believe mental wellness should be both accessible and transformative, helping people connect to themselves and the world around them.",
+];

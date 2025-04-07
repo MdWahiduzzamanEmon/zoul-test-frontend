@@ -1,0 +1,12 @@
+export const Aquarius = require("./Aquarius.png");
+export const Aries = require("./Aries.png");
+export const Cancer = require("./Cancer.png");
+export const Capricorn = require("./Capricorn.png");
+export const Fish = require("./Fish.png");
+export const Gemini = require("./Gemini.png");
+export const Libra = require("./Libra.png");
+export const Sagittarius = require("./Sagitarius.png");
+export const Scorpio = require("./Scorpio.png");
+export const Taurus = require("./Taurus.png");
+export const Virgo = require("./Virgo.png");
+export const Leo = require("./leo.png");
