@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { scaleSize } from "../../styles/mixins";
 import CheckCircle from "../../assets/icons/CheckCircle.svg"; // Ensure SVG is correctly imported
+import { colors } from "../../styles/theme";
 
 const SubscriptionModalV2 = ({ isVisible, hideModal, code }) => {
   const [selectedPlan, setSelectedPlan] = useState("pro");
@@ -90,11 +91,11 @@ const SubscriptionModalV2 = ({ isVisible, hideModal, code }) => {
 const styles = StyleSheet.create({
   overlay: {
     flex: 1,
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "rgba(0,0,0,0.2)",
     justifyContent: "flex-end", // 👈 Move modal to the bottom
   },
   container: {
-    backgroundColor: "white",
+    backgroundColor: colors.mustardYellow2,
     width: "100%", // Full width
     padding: scaleSize(20),
     borderTopLeftRadius: scaleSize(15), // Rounded top corners
@@ -119,7 +120,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: scaleSize(14),
-    color: "gray",
+    color: colors.blackCherry,
     marginBottom: scaleSize(20),
     textAlign: "center",
   },

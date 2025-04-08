@@ -67,13 +67,13 @@ const styles = StyleSheet.create({
   overlay: {
     flex: 1,
     justifyContent: "flex-end", // Push modal to the bottom
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "rgba(0,0,0,0.2)",
   },
   modalWrapper: {
     width: "100%",
   },
   modalContainer: {
-    backgroundColor: "white",
+    backgroundColor: colors.mustardYellow2,
     borderTopLeftRadius: scaleSize(20),
     borderTopRightRadius: scaleSize(20),
     padding: scaleSize(20),

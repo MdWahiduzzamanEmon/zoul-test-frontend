@@ -167,18 +167,18 @@ export default function AppNavigator() {
   );
   const [openSubscriptionModal, setOpenSubscriptionModal] = useState(false);
 
-  useEffect(() => {
-    if (!isUserSubscribed) {
-      setTimeout(() => {
-        if (promoCodeData && !loading) {
-          if (isPromoRedeemable && isVerifiedPromo) {
-          } else if (isVerifiedPromo) {
-            setOpenSubscriptionModal(true);
-          }
-        }
-      }, 3200);
-    }
-  }, [isVerifiedPromo, promoCodeData, isPromoRedeemable, loading]);
+  // useEffect(() => {
+  //   if (!isUserSubscribed) {
+  //     setTimeout(() => {
+  //       if (promoCodeData && !loading) {
+  //         if (isPromoRedeemable && isVerifiedPromo) {
+  //         } else if (isVerifiedPromo) {
+  //           setOpenSubscriptionModal(true);
+  //         }
+  //       }
+  //     }, 3200);
+  //   }
+  // }, [isVerifiedPromo, promoCodeData, isPromoRedeemable, loading]);
 
   const player = usePlayer();
   let timeoutRef = null;
@@ -221,6 +221,13 @@ export default function AppNavigator() {
     }, randomTime);
   };
 
+  const showSubscriptionModal = () => {
+    const randomTime = Math.random() * (60000 - 30000) + 30000; // Random 30s - 60s
+    timeoutRef = setTimeout(() => {
+      setOpenSubscriptionModal(true);
+    }, randomTime);
+  };
+
   const handleCloseAuthModal = () => {
     setIsAuthenticationModalVisible(false);
     if (!authToken) {
@@ -228,10 +235,17 @@ export default function AppNavigator() {
     }
   };
 
-  const handleCloseSubscribeModal = () => {
+  const handleCloseNewLetterModal = () => {
     setIsSubscribeNewsLetterModalVisible(false);
     if (!authToken) {
-      showAuthModalRandomly(); // Show auth modal after closing subscription modal
+      showSubscriptionModal(); // Show auth modal after closing subscription modal
+    }
+  };
+
+  const handleCloseSubscriptionModal = () => {
+    setOpenSubscriptionModal(false);
+    if (!authToken) {
+      showAuthModalRandomly(); // Show subscription modal after closing auth modal
     }
   };
 
@@ -459,11 +473,12 @@ export default function AppNavigator() {
           }}
         />
       </AppStack.Navigator>
-      {openSubscriptionModal && (
+      {openSubscriptionModal && !isAuthenticationModalVisible && (
         <SubscriptionModalV2
           isVisible={openSubscriptionModal}
           hideModal={() => {
-            setOpenSubscriptionModal(false);
+            // setOpenSubscriptionModal(false);
+            handleCloseSubscriptionModal();
           }}
           code={promoCodeData}
         />
@@ -482,7 +497,7 @@ export default function AppNavigator() {
       {isSubscribeNewsLetterModalVisible && !isAuthenticationModalVisible && (
         <SubscribeNewsLetterModal
           isVisible={isSubscribeNewsLetterModalVisible}
-          onPress={handleCloseSubscribeModal}
+          onPress={handleCloseNewLetterModal}
         />
       )}
       {/* <NetworkModal

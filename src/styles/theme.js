@@ -38,7 +38,7 @@ const colors = {
   limeGreen: "#34A853",
   goldenOlive: "#A18E2D",
   mustardYellow: "#A08724",
-
+  mustardYellow2: "#dea829",
   maroon: "#410202",
   logoColor: "#3D0000",
   // Heading Text colors

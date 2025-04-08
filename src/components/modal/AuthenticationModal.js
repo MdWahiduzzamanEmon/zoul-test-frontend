@@ -18,8 +18,10 @@ import CloseSvg from "../../assets/icons/close.svg";
 import { useSocialAuthentication } from "../social-button/useSocialAuthentication";
 import { useSelector } from "react-redux";
 import { ActivityIndicator } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const AuthenticationModal = ({ isVisible = false, onPress }) => {
+  const navigation = useNavigation();
   const { onGoogleAuth, onAppleAuth, onFacebookAuth } =
     useSocialAuthentication();
   const { isSocialLoading } = useSelector((state) => state.authReducer);
@@ -63,7 +65,10 @@ const AuthenticationModal = ({ isVisible = false, onPress }) => {
 
               {/* More Options */}
               <Pressable
-                onPress={() => console.log("View more sign-in options pressed")}
+                onPress={() => {
+                  onPress();
+                  navigation.navigate("Login");
+                }}
               >
                 <Text style={styles.moreOptionsText}>
                   View more sign-in options
@@ -99,12 +104,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.6)", // Darker overlay for better contrast
+    backgroundColor: "rgba(0,0,0,0.2)", // Darker overlay for better contrast
   },
   modalContainer: {
     height: 250,
     width: "100%",
-    backgroundColor: colors.white,
+    backgroundColor: colors.mustardYellow2,
     alignItems: "center",
     justifyContent: "center",
     borderTopLeftRadius: scaleSize(30),
@@ -124,7 +129,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: scaleSize(20),
     fontWeight: "bold",
-    color: "black",
+    color: colors.blackCherry,
   },
   googleButton: {
     flexDirection: "row",
