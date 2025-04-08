@@ -34,7 +34,7 @@ const API = {
   CATEGORIES: BASE_URL + "categories",
   GLOBAL_CONTENT: BASE_URL + "global-content?page=",
   SUB_CATEGORIES: BASE_URL + "sub-categories",
-  ONE_CATEGORIE: BASE_URL  + "categories/",
+  ONE_CATEGORIE: BASE_URL + "categories/",
   PLAYLISTS: BASE_URL + "playlists",
   SINGLE_GOAL: BASE_URL + "sub-categories/",
 
@@ -111,7 +111,7 @@ const API = {
   SAVE_SUBSCRIPTION_DETAILS: BASE_URL + "inapp-purchases/save",
 
   //Event Logging
-  LOG_EVENT:BASE_URL+ "event-activity-log/create",
+  LOG_EVENT: BASE_URL + "event-activity-log/create",
   FETCH_SUBSCRIPTION_IMAGES: BASE_URL + "subscription-images/images",
   FETCH_HOMEPAGE_BANNERS: BASE_URL + "home-page-banners/get",
   FETCH_LIVESTREAM_BANNERS: BASE_URL + "live-stream-banners/get",
